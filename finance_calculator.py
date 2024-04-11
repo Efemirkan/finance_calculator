@@ -46,7 +46,7 @@ current total known as the accumulated amount.
         # Take user's inputs
         house_value = numeric_exceptions("How much is house\'s present value? ")
         rate_bond =  numeric_exceptions("Enter the interest rate: ")
-        months =  numeric_exceptions("How many months are you planning of taking repayment? ")
+        months =  numeric_exceptions("How many years are you planning of taking repayment? ")
         
         # Call repayment function to calculate repayment then print as formatted   
         repayment_value = repayment(house_value, rate_bond, months)   
