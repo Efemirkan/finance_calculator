@@ -84,7 +84,7 @@ def repayment(p, i, n):
     "i" is the monthly interest rate
     '''
     # repayment = (i * P)/(1 - (1 + i)**(-n)) formula
-    return ((i / 1200) * p) / (1 - math.pow((1 + (i / 1200)), -n))
+    return ((i / 1200) * p) / (1 - math.pow((1 + (i / 1200)), (-n * 12)))
 
 # Define string_exception(option_1, option_2) funtion to handle exceptions releated to ValueError 
 def string_exception(option_1, option_2):
