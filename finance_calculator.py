@@ -52,3 +52,20 @@ def string_exception(option_1, option_2):
         # Print ValueError message
         except ValueError as e:
             print(e) 
+
+# Define numeric_exceptions(prompt) funtion to handle exceptions releated to ValueError
+def numeric_exceptions(prompt):
+
+    # While loop to ask user continuesly until they enter required input
+    while True:
+
+        # Take user's input
+        try:
+            user_input = float(input(prompt))
+            return user_input
+        # Handle expection ValueError and Print error message
+        except ValueError:
+            print("PLease enter a number of value")
+
+if __name__ == "__main__":
+    main()
