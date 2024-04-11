@@ -22,3 +22,14 @@ def compound_interest(p, r, t):
     '''
     # 𝐴 = 𝑃(1 + 𝑟)**𝑡 formula 
     return p * math.pow((1 + (r / 100)), t)
+
+# Define repayment(p, i, n) function to calculate repayment
+def repayment(p, i, n):
+
+    '''         
+    "n" is the number of months over which the bond will be repaid.
+    "P" is the present value of the house.
+    "i" is the monthly interest rate
+    '''
+    # repayment = (i * P)/(1 - (1 + i)**(-n)) formula
+    return ((i / 1200) * p) / (1 - math.pow((1 + (i / 1200)), -n))
