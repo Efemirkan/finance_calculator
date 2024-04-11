@@ -2,6 +2,12 @@ import math
 
 def main():
 
+    print("""
+Investment - to calculate the amount of interest you'll earn on your investment
+Bond - to calculate the amount you'll have to pay on a home loan
+
+""")
+
     # Take user's input
     user_choice = string_exception("investment", "bond")
 
@@ -12,6 +18,12 @@ def main():
         deposit = numeric_exceptions("How much would you like to deposit? ")
         rate_investment = numeric_exceptions("Enter the interest rate: ")
         year = numeric_exceptions("How many years are you planing to interest? ")
+        print("""
+- Simple interest is continually calculated on the initial amount invested and
+is only calculated once per year.
+- Compound interest is different, in that the interest is calculated on the
+current total known as the accumulated amount.
+""")
         interest_type = string_exception("simple", "compound")
 
         # If user chooses "simple"
